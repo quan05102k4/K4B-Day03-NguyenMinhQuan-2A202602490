@@ -41,6 +41,12 @@ cp config/test_cases.example.json config/test_cases.json
 python src/app.py --all
 ```
 
+### Bước 3b (Tùy chọn): Chạy Giao diện Web trực quan (Streamlit)
+```bash
+streamlit run src/ui_app.py
+```
+Giao diện chat trực quan mở tại `http://localhost:8501`, cho phép trò chuyện trực tiếp với ReAct Agent, xem chi tiết Thought → Action → Observation và biểu đồ chi tiêu theo danh mục.
+
 **Kỳ vọng Output màn hình:**
 ```text
 ✅ [MOCK OFFLINE MODE PASS]: Môi trường đã sẵn sàng! 
@@ -109,6 +115,7 @@ Học viên làm bài lần lượt theo đúng luồng 3 bước tinh giản d�
 │   ├── 📄 prompts.py            <-- 🛡️ System Prompts cho Chatbot và ReAct Agent
 │   ├── 📄 providers.py          <-- 🔌 Multi-Provider LLM Adapter (Gemini/OpenAI/Mock)
 │   ├── 📄 app.py                <-- 🚀 MCP Client & Core Agent App ghép nối ReAct Loop & Trace Log
+│   ├── 📄 ui_app.py             <-- 🖥️ Giao diện Web trực quan (Streamlit Chat UI)
 │   └── 📁 ai_levels/            <-- 📚 [REFERENCE ONLY] Code mẫu kiến trúc tham khảo (Không sửa/debug)
 │       └── 📄 README.md         <-- ⚠️ Chú thích mã nguồn tham khảo
 │

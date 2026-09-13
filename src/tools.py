@@ -7,8 +7,15 @@ Chủ đề: TRỢ LÝ QUẢN LÝ CHI TIÊU CÁ NHÂN (Personal Expense Manager 
 """
 
 import json
+import sys
 from datetime import datetime
 from typing import Dict, Any, Optional
+
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
 # ==============================================================================
 # 1. KHAI BÁO TOOL SCHEMAS CHUẨN NATIVE JSON SCHEMA
@@ -173,3 +180,10 @@ def dispatch_tool_call(tool_name: str, arguments: Dict[str, Any]) -> str:
         except Exception as e:
             return json.dumps({"status": "EXECUTION_ERROR", "error": str(e)}, ensure_ascii=False)
     return json.dumps({"status": "UNKNOWN_TOOL", "error": f"Tool '{tool_name}' không tồn tại!"}, ensure_ascii=False)
+
+
+if __name__ == "__main__":
+    print(f"✅ [TOOLS CHECK]: Đã đăng ký thành công {len(TOOLS_SCHEMA)} Native Tools trong TOOLS_SCHEMA!")
+
+    test_result = json.loads(dispatch_tool_call("expense_query", {"user_id": "U001"}))
+    print(f"🔎 Kết quả gọi thử expense_query: Status {test_result.get('status')} (Người dùng U001)")
