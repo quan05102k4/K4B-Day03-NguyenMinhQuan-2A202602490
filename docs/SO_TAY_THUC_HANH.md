@@ -53,13 +53,13 @@ gantt
 
 ### 🔷 PHẦN 4 (30 phút): Tự kiểm tra & Nộp bài Git/GitHub
 * [ ] Kiểm tra tên Repo cá nhân đúng chuẩn: **`K4-DAY03-<HoVaTen>_<MSSV>`**. *(Repo hiện tại tên `K4B-Day03-NguyenMinhQuan-2A202602490` — cần đối chiếu lại với quy định lớp học chính thức trước khi nộp)*
-* [ ] Chạy lệnh Git để push toàn bộ mã nguồn lên GitHub cá nhân:
+* [x] Chạy lệnh Git để push toàn bộ mã nguồn lên GitHub cá nhân:
   ```bash
   git add .
   git commit -m "feat: complete Day 03 Lab Chatbot vs ReAct Agent"
   git push origin main
   ```
-  *(Chưa thực hiện — code đã sẵn sàng, đang chờ lệnh commit/push)*
+  *(Đã commit và push thành công lên `origin/main`)*
 * [ ] Nộp link Repo GitHub cá nhân lên hệ thống VLearn.
 
 ---
