@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TC01",
+    "type": "direct_query",
+    "question": "Chào bạn, bạn có thể cho tôi vài mẹo đơn giản để tiết kiệm chi tiêu hàng tháng không?",
+    "expected_behavior": "Chatbot trả lời trực tiếp từ System Prompt (mẹo quản lý tài chính chung), không cần gọi bất kỳ Tool nào.",
+    "complexity": "Low"
+  },
+  {
+    "id": "TC02",
+    "type": "single_tool_query",
+    "question": "Hãy tra cứu tổng chi tiêu cho danh mục Ăn uống trong tháng 09/2026 của người dùng U001.",
+    "expected_behavior": "Agent nhận diện nhu cầu tra cứu, tự động phát sinh Tool Call 'expense_query' với user_id='U001', category='Ăn uống', month='09/2026'.",
+    "complexity": "Medium"
+  },
+  {
+    "id": "TC03",
+    "type": "action_execution",
+    "question": "Hãy ghi nhận giúp tôi khoản chi 150000 VNĐ cho danh mục Di chuyển của người dùng U001, nội dung là đi taxi về nhà.",
+    "expected_behavior": "Agent tự động phát sinh Tool Call 'add_expense' với đúng user_id, category, amount và mô tả khoản chi.",
+    "complexity": "Medium"
+  },
+  {
+    "id": "TC04",
+    "type": "multi_step_reasoning",
+    "question": "Tôi là người dùng U001, hôm nay tôi vừa chi 200000 VNĐ cho danh mục Ăn uống, hãy ghi nhận khoản chi này giúp tôi, sau đó cho tôi biết tổng tôi đã chi cho danh mục Ăn uống trong tháng 09/2026.",
+    "expected_behavior": "Agent thực hiện chuỗi suy luận ReAct: ưu tiên ghi nhận khoản chi tiêu mới qua 'add_expense' trước, thể hiện khả năng suy luận thứ tự ưu tiên hành động khi yêu cầu có nhiều bước lồng nhau.",
+    "complexity": "High"
+  },
+  {
+    "id": "TC05",
+    "type": "edge_case_handling",
+    "question": "Hãy tra cứu chi tiêu của người dùng U999.",
+    "expected_behavior": "Agent nhận kết quả NOT_FOUND từ Tool 'expense_query' (do U999 không tồn tại trong dữ liệu) và đưa ra phản hồi lịch sự, chính xác không bịa đặt dữ liệu.",
+    "complexity": "Medium"
+  }
+]

@@ -1,29 +1,141 @@
 [
   {
     "step": 1,
-    "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
+    "query": "Chào bạn, bạn có thể cho tôi vài mẹo đơn giản để tiết kiệm chi tiêu hàng tháng không?",
     "action_type": "FINAL_ANSWER",
-    "thought": "Câu hỏi chung về quy chế học vụ, trả lời trực tiếp không cần gọi Tool.",
-    "output": "[Mock Agent Response]: Xin chào! Quy chế học vụ VinUni yêu cầu sinh viên tích lũy tối thiểu 120 tín chỉ và duy trì GPA trên 2.0 để tốt nghiệp.",
-    "latency_ms": 2845.93
+    "thought": "Groq phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Dưới đây là một vài mẹo đơn giản nhưng hiệu quả giúp bạn giảm bớt chi tiêu hàng tháng mà không cần thay đổi lối sống quá nhiều:\n\n| Mẹo | Cách thực hiện | Lợi ích |\n|-----|----------------|---------|\n| **1. Lập ngân sách chi tiêu** | - Xác định các hạng mục chi (ăn uống, di chuyển, giải trí, hoá đơn, v.v.) <br> - Đặt hạn mức cho mỗi mục dựa trên thu nhập thực tế <br> - Kiểm tra định kỳ (hàng tuần hoặc cuối tháng) để xem có vượt mức không | Giúp bạn “biết mình chi bao nhiêu” và dễ điều chỉnh kịp thời. |\n| **2. Ghi lại mọi khoản chi** | - Sử dụng app quản lý chi tiêu, spreadsheet, hoặc sổ tay. <br> - Ghi ngay cả các khoản nhỏ (< 5 k). | Khi thấy tổng các khoản “nhỏ” tích lũy, bạn sẽ tránh lãng phí không cần thiết. |\n| **3. Mua sắm thông minh** | - Đặt danh sách mua sắm trước khi ra cửa hàng hoặc vào siêu thị. <br> - So sánh giá online và offline, chờ khuyến mãi (30 %/50 % giảm). <br> - Mua số lượng lớn (đồ dùng thiết yếu) khi có khuyến mãi. | Giảm chi phí mua lặp lại và tránh “mua sờn”. |\n| **4. Giảm chi phí ăn uống** | - Nấu ăn tại nhà ít nhất 3‑4 bữa/tuần. <br> - Chuẩn bị bữa ăn (meal‑prep) để tránh “đói” và phải mua ăn nhanh. <br> - Mang hộp cơm tự làm đi làm hoặc đi học. | Chi phí bữa ăn có thể giảm 30‑50 % so với ăn ngoài. |\n| **5. Tối ưu hoá chi phí di chuyển** | - Sử dụng phương tiện công cộng, xe đạp, hoặc đi bộ khi khoảng cách ngắn. <br> - Chia sẻ xe (car‑pool) với đồng nghiệp/bạn bè. <br> - Đăng ký thẻ ưu đãi hoặc chương trình khách hàng thường xuyên của các hãng taxi/xe máy. | Giảm chi phí xăng dầu, bảo dưỡng, hoặc phí taxi. |\n| **6. Cắt giảm các dịch vụ không cần** | - Rà soát các thuê bao (nhạc, video, báo, gym). <br> - Hủy hoặc tạm dừng các gói không dùng thường xuyên. | Tiết kiệm hàng trăm nghìn đồng mỗi tháng. |\n| **7. Tiết kiệm năng lượng điện nước** | - Tắt thiết bị điện khi không dùng (đèn, TV, máy lạnh). <br> - Sử dụng đèn LED, máy giặt/máy rửa chén ở chế độ eco. <br> - Kiểm tra và sửa chữa rò rỉ vòi nước. | Giảm chi phí hoá đơn điện‑nước đáng kể. |\n| **8. Đặt mục tiêu tiết kiệm cụ thể** | - Đặt “quỹ dự phòng” 10‑15 % thu nhập (hoặc một khoản cố định mỗi tháng). <br> - Tự động chuyển tiền vào tài khoản tiết kiệm ngay khi nhận lương. | Khi đã “đóng băng” tiền, bạn sẽ ít có xu hướng tiêu tiêu. |\n| **9. Sử dụng ưu đãi thẻ ngân hàng** | - Kiểm tra chương trình hoàn tiền (cashback), giảm giá khi thanh toán bằng thẻ. <br> - Tận dụng điểm thưởng để đổi quà hoặc giảm chi phí mua sắm. | Giảm trực tiếp chi phí thanh toán. |\n| **10. Đánh giá lại thói quen tiêu dùng** | - Hàng tháng, xem lại các khoản “cố định” (đăng ký, thuê bao) và hỏi mình: “Mình thực sự cần không?”. <br> - Thay thế các thói quen tiêu dùng “đắt” bằng lựa chọn rẻ hơn (ví dụ: cà phê tại nhà thay vì mua ngoài). | Giúp bạn nhận ra những chi phí “không cần thiết”. |\n\n### Một số bước nhanh để bắt đầu ngay:\n\n1. **Mở một bảng tính (Google Sheets/Excel) và tạo 3 cột:** *Ngày, Danh mục, Số tiền*.  \n2. **Ghi lại mọi chi tiêu trong 1‑2 tuần đầu tiên.**  \n3. **Tính tổng cho mỗi danh mục và xác định 2‑3 mục chi lớn nhất.**  \n4. **Chọn 1‑2 biện pháp trên (ví dụ: nấu ăn tại nhà, dùng phương tiện công cộng) để áp dụng trong tháng tới.**  \n5. **Đánh giá lại vào cuối tháng:** Tiết kiệm được bao nhiêu? Cảm giác thế nào? Điều chỉnh nếu cần.\n\nNhững thay đổi nhỏ nhưng kiên trì sẽ tích lũy thành khoản tiền đáng kể theo thời gian. Chúc bạn thành công trong việc kiểm soát chi tiêu! 🚀",
+    "latency_ms": 7035.51
   },
   {
     "step": 1,
-    "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
+    "query": "Hãy tra cứu tổng chi tiêu cho danh mục Ăn uống trong tháng 09/2026 của người dùng U001.",
     "action_type": "TOOL_EXECUTION",
-    "tool_name": "academic_query",
+    "tool_name": "expense_query",
     "arguments": {
-      "student_id": "SV2026001"
+      "category": "Ăn uống",
+      "month": "09/2026",
+      "user_id": "U001"
     },
-    "observation": {},
-    "latency_ms": 799.12
+    "observation": {
+      "status": "SUCCESS",
+      "user_id": "U001",
+      "data": {
+        "total_amount": 205000,
+        "transaction_count": 2,
+        "category_filter": "Ăn uống",
+        "month_filter": "09/2026",
+        "records": [
+          {
+            "category": "Ăn uống",
+            "amount": 85000,
+            "date": "02/09/2026",
+            "description": "Ăn trưa văn phòng"
+          },
+          {
+            "category": "Ăn uống",
+            "amount": 120000,
+            "date": "05/09/2026",
+            "description": "Đi ăn tối với bạn"
+          }
+        ]
+      }
+    },
+    "latency_ms": 842.96
   },
   {
     "step": 2,
-    "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
+    "query": "Hãy tra cứu tổng chi tiêu cho danh mục Ăn uống trong tháng 09/2026 của người dùng U001.",
     "action_type": "FINAL_ANSWER",
     "thought": "Tổng hợp kết quả từ MCP Server thành công.",
-    "output": "Chưa thể trả lời chi tiết do chưa nhận được dữ liệu từ MCP Server (hãy hoàn thành TODO 2.1).",
+    "output": "Người dùng U001 đã chi tổng cộng 205,000 VNĐ qua 2 giao dịch (danh mục 'Ăn uống', tháng 09/2026).",
+    "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Hãy ghi nhận giúp tôi khoản chi 150000 VNĐ cho danh mục Di chuyển của người dùng U001, nội dung là đi taxi về nhà.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "add_expense",
+    "arguments": {
+      "amount": 150000,
+      "category": "Di chuyển",
+      "description": "đi taxi về nhà",
+      "user_id": "U001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "expense_id": "EXP-U001-006",
+      "user_id": "U001",
+      "data": {
+        "category": "Di chuyển",
+        "amount": 150000,
+        "date": "13/09/2026",
+        "description": "đi taxi về nhà"
+      },
+      "message": "Đã ghi nhận thành công khoản chi 150,000 VNĐ cho danh mục 'Di chuyển' vào ngày 13/09/2026."
+    },
+    "latency_ms": 978.82
+  },
+  {
+    "step": 2,
+    "query": "Hãy ghi nhận giúp tôi khoản chi 150000 VNĐ cho danh mục Di chuyển của người dùng U001, nội dung là đi taxi về nhà.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
+    "output": "Đã ghi nhận thành công khoản chi 150,000 VNĐ cho danh mục 'Di chuyển' vào ngày 13/09/2026.",
+    "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Tôi là người dùng U001, hôm nay tôi vừa chi 200000 VNĐ cho danh mục Ăn uống, hãy ghi nhận khoản chi này giúp tôi, sau đó cho tôi biết tổng tôi đã chi cho danh mục Ăn uống trong tháng 09/2026.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "add_expense",
+    "arguments": {
+      "amount": 200000,
+      "category": "Ăn uống",
+      "user_id": "U001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "expense_id": "EXP-U001-007",
+      "user_id": "U001",
+      "data": {
+        "category": "Ăn uống",
+        "amount": 200000,
+        "date": "13/09/2026",
+        "description": ""
+      },
+      "message": "Đã ghi nhận thành công khoản chi 200,000 VNĐ cho danh mục 'Ăn uống' vào ngày 13/09/2026."
+    },
+    "latency_ms": 1113.59
+  },
+  {
+    "step": 2,
+    "query": "Tôi là người dùng U001, hôm nay tôi vừa chi 200000 VNĐ cho danh mục Ăn uống, hãy ghi nhận khoản chi này giúp tôi, sau đó cho tôi biết tổng tôi đã chi cho danh mục Ăn uống trong tháng 09/2026.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
+    "output": "Đã ghi nhận thành công khoản chi 200,000 VNĐ cho danh mục 'Ăn uống' vào ngày 13/09/2026.",
+    "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Hãy tra cứu chi tiêu của người dùng U999.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "expense_query",
+    "arguments": {
+      "user_id": "U999"
+    },
+    "observation": {
+      "status": "NOT_FOUND",
+      "message": "Không tìm thấy dữ liệu chi tiêu nào cho người dùng 'U999'"
+    },
+    "latency_ms": 944.82
+  },
+  {
+    "step": 2,
+    "query": "Hãy tra cứu chi tiêu của người dùng U999.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
+    "output": "Không tìm thấy dữ liệu chi tiêu nào cho người dùng 'U999'",
     "latency_ms": 10.0
   }
 ]
